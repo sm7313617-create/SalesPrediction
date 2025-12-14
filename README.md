@@ -1,34 +1,49 @@
-# CodeAlpha_SalesPrediction
-Sales Prediction using Python – CodeAlpha Internship Project
 📊 Sales Prediction using Machine Learning
 
-This project predicts future sales based on advertising budgets using a Machine Learning regression model.
-It helps businesses optimize marketing strategies by analyzing the impact of TV, Radio, and Newspaper advertising on sales.
+A full-stack Machine Learning web application that predicts future sales based on advertising budgets using Linear Regression.
+The project is deployed live on Render and provides real-time predictions through an interactive web interface.
 
 Internship Project – CodeAlpha
 
-🚀 Project Overview
+🚀 Live Demo
 
-Accurate sales forecasting is essential for effective business decision-making.
-This project uses Linear Regression with StandardScaler to predict sales based on advertising spend and provides real-time predictions through a Flask web application.
+🔗 Deployed Application:
+👉 Add your Render URL here
 
-✨ Features
+https://saleshorizon.onrender.com
 
-Predict sales using advertising budget inputs
+📌 Project Description
 
-Data preprocessing and feature scaling with StandardScaler
+Sales forecasting plays a crucial role in business planning and marketing optimization.
+This project predicts sales based on advertising expenditure across three major channels:
 
-Trained Linear Regression model
+TV
 
-Interactive web interface for real-time predictions
+Radio
 
-Flask backend API integration
+Newspaper
 
-Clean and professional project structure
+The system uses data preprocessing, feature scaling, and regression modeling to generate accurate and interpretable predictions, delivered through a user-friendly web interface.
+
+✨ Key Features
+
+📈 Predict sales using advertising budgets
+
+⚙️ Data preprocessing with StandardScaler
+
+🧠 Trained Linear Regression model
+
+🌐 Flask-based backend API
+
+🎨 Clean and responsive frontend UI
+
+☁️ Deployed live on Render
+
+🔄 Real-time predictions
 
 🧠 Machine Learning Workflow
 
-Data loading and exploration
+Dataset loading and exploration
 
 Data cleaning and feature selection
 
@@ -38,12 +53,12 @@ Model training using Linear Regression
 
 Model evaluation using R² score
 
-Saving trained model and scaler
+Saving trained model and scaler (.pkl)
 
 Serving predictions via Flask API
 
 🛠️ Technology Stack
-Backend & ML
+🔹 Backend & Machine Learning
 
 Python
 
@@ -55,7 +70,7 @@ Scikit-learn
 
 Flask
 
-Frontend
+🔹 Frontend
 
 HTML
 
@@ -63,16 +78,21 @@ Tailwind CSS
 
 JavaScript
 
-Tools
+🔹 Tools & Platforms
 
 Jupyter Notebook
 
 Git & GitHub
 
+Render (Deployment)
+
 📂 Project Structure
 CodeAlpha_SalesPrediction
 │
 ├── app.py
+├── requirements.txt
+├── README.md
+│
 ├── model/
 │   ├── sales_model.pkl
 │   └── scaler.pkl
@@ -86,11 +106,8 @@ CodeAlpha_SalesPrediction
 ├── templates/
 │   └── index.html
 │
-├── static/
-│   └── script.js
-│
-├── requirements.txt
-└── README.md
+└── static/
+    └── script.js
 
 ⚙️ How to Run the Project Locally
 1️⃣ Clone the Repository
@@ -106,57 +123,74 @@ Windows
 venv\Scripts\activate
 
 
-Mac/Linux
+Mac / Linux
 
 source venv/bin/activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Run the Application
+4️⃣ Run the Flask App
 python app.py
 
 
-Open browser and visit:
+Open browser:
 
 http://127.0.0.1:5000
 
-📈 Sample Input
-Advertising Channel	Budget (₹)
+📊 Sample Input & Output
+🔹 Input (Advertising Budget in ₹)
+Channel	Budget
 TV	230.5
 Radio	37.8
 Newspaper	69.2
 🔹 Output
 Predicted Sales: XX.XX Units
 
-🎯 Business Insights
+📈 Business Insights
 
-TV advertising has the highest impact on sales
+TV advertising shows the strongest impact on sales
 
-Feature scaling improves prediction accuracy
+Feature scaling improves model accuracy
 
-Regression provides interpretable insights for marketing optimization
+Regression offers interpretability for marketing decisions
 
-Helps businesses allocate budgets more effectively
+Helps businesses allocate advertising budgets effectively
 
-📌 Internship Details
+☁️ Deployment Details
+
+Platform: Render
+
+Deployment Type: Flask Web Service
+
+Runtime: Python
+
+Model Artifacts: Stored as .pkl files
+
+Environment Variables: Managed by Render automatically
+
+📌 Internship Information
 
 Internship Provider: CodeAlpha
 
-Project Type: Data Science / Machine Learning
+Project Title: Sales Prediction using Machine Learning
+
+Domain: Data Science / Machine Learning
 
 Intern: Sayan Mondal
 
 🔗 Links
 
-GitHub Repository: (Add your GitHub repo link here)
+GitHub Repository: (Add your repo link here)
 
-LinkedIn Post: (Add your LinkedIn post link here)
+Live Application: (Add Render URL here)
+
+LinkedIn Post: (Add LinkedIn post link here)
 
 📜 License
 
-This project is for educational and internship purposes only.
+This project is developed for educational and internship purposes only.
 
-🙌 Acknowledgement
+🙌 Acknowledgements
 
-Thanks to CodeAlpha for providing this learning opportunity and hands-on project experience in Machine Learning and full-stack development.
+Special thanks to CodeAlpha for providing this internship opportunity and enabling hands-on learning in Machine Learning and full-stack deployment.
