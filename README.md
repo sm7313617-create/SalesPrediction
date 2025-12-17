@@ -1,196 +1,117 @@
-📊 Sales Prediction using Machine Learning
+Sales Horizon – Sales Prediction Using Machine Learning
+Project Overview
 
-A full-stack Machine Learning web application that predicts future sales based on advertising budgets using Linear Regression.
-The project is deployed live on Render and provides real-time predictions through an interactive web interface.
+Sales Horizon is a machine learning–based project designed to predict future sales based on advertising expenditure across different marketing channels. The project demonstrates a complete data science workflow, including data preprocessing, feature scaling, regression modeling, and deployment using Flask.
 
-Internship Project – CodeAlpha
+This project was developed as part of an internship at CodeAlpha.
 
-🚀 Live Demo
+Problem Statement
 
-🔗 Deployed Application:
-👉 Add your Render URL here
+Businesses invest in multiple advertising channels such as TV, radio, and newspapers, but understanding how these investments impact sales is challenging. The goal of this project is to build a predictive model that estimates sales outcomes based on advertising spend, helping businesses make data-driven marketing decisions.
 
-https://saleshorizon.onrender.com
+Objective
 
-📌 Project Description
+Predict sales using historical advertising data
 
-Sales forecasting plays a crucial role in business planning and marketing optimization.
-This project predicts sales based on advertising expenditure across three major channels:
+Analyze the impact of different advertising channels
 
-TV
+Build a regression model for continuous value prediction
 
-Radio
+Deploy the model as a web application
 
-Newspaper
+Dataset Description
 
-The system uses data preprocessing, feature scaling, and regression modeling to generate accurate and interpretable predictions, delivered through a user-friendly web interface.
+The dataset contains advertising expenditure and corresponding sales values.
 
-✨ Key Features
+Feature	Description
+TV	Advertising budget spent on TV
+Radio	Advertising budget spent on Radio
+Newspaper	Advertising budget spent on Newspaper
+Sales	Target variable representing total sales
+Data Preprocessing
 
-📈 Predict sales using advertising budgets
+Checked and handled missing values
 
-⚙️ Data preprocessing with StandardScaler
+Performed exploratory data analysis
 
-🧠 Trained Linear Regression model
+Applied StandardScaler to normalize features
 
-🌐 Flask-based backend API
+Split data into training and testing sets
 
-🎨 Clean and responsive frontend UI
+Machine Learning Model
 
-☁️ Deployed live on Render
+Algorithm: Linear Regression
 
-🔄 Real-time predictions
+Problem Type: Regression
 
-🧠 Machine Learning Workflow
+The model learns the relationship between advertising budgets and sales output.
 
-Dataset loading and exploration
+Model Evaluation
 
-Data cleaning and feature selection
+The model was evaluated using regression metrics:
 
-Feature scaling using StandardScaler
+R² Score (Coefficient of Determination)
 
-Model training using Linear Regression
+Root Mean Squared Error (RMSE)
 
-Model evaluation using R² score
+These metrics indicate how well the model explains sales variability and the average prediction error.
 
-Saving trained model and scaler (.pkl)
+Web Application
 
-Serving predictions via Flask API
+The project includes a Flask-based web interface where users can:
 
-🛠️ Technology Stack
-🔹 Backend & Machine Learning
+Input advertising budgets
 
-Python
+Get an instant sales prediction
 
-Pandas
+Understand how changes in ad spend affect sales outcomes
 
-NumPy
-
-Scikit-learn
-
-Flask
-
-🔹 Frontend
-
-HTML
-
-Tailwind CSS
-
-JavaScript
-
-🔹 Tools & Platforms
-
-Jupyter Notebook
-
-Git & GitHub
-
-Render (Deployment)
-
-📂 Project Structure
-CodeAlpha_SalesPrediction
+Project Structure
+Sales_Horizon/
 │
 ├── app.py
 ├── requirements.txt
-├── README.md
-│
 ├── model/
 │   ├── sales_model.pkl
 │   └── scaler.pkl
 │
-├── data/
-│   └── Advertising.csv
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── script.js
 │
 ├── notebooks/
 │   └── sales_prediction.ipynb
 │
-├── templates/
-│   └── index.html
-│
-└── static/
-    └── script.js
+└── data/
+    └── advertising.csv
 
-⚙️ How to Run the Project Locally
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/CodeAlpha_SalesPrediction.git
-cd CodeAlpha_SalesPrediction
-
-2️⃣ Create & Activate Virtual Environment
+How to Run Locally
+git clone <repository-link>
+cd Sales_Horizon
 python -m venv venv
-
-
-Windows
-
 venv\Scripts\activate
-
-
-Mac / Linux
-
-source venv/bin/activate
-
-3️⃣ Install Dependencies
 pip install -r requirements.txt
-
-4️⃣ Run the Flask App
 python app.py
 
+Key Learnings
 
-Open browser:
+Regression-based sales forecasting
 
-http://127.0.0.1:5000
+Feature scaling and preprocessing
 
-📊 Sample Input & Output
-🔹 Input (Advertising Budget in ₹)
-Channel	Budget
-TV	230.5
-Radio	37.8
-Newspaper	69.2
-🔹 Output
-Predicted Sales: XX.XX Units
+Flask API development
 
-📈 Business Insights
+Frontend and backend integration
 
-TV advertising shows the strongest impact on sales
+Real-world deployment workflow
 
-Feature scaling improves model accuracy
+Author
 
-Regression offers interpretability for marketing decisions
+Sayan Mondal
+Intern at CodeAlpha
 
-Helps businesses allocate advertising budgets effectively
+License
 
-☁️ Deployment Details
-
-Platform: Render
-
-Deployment Type: Flask Web Service
-
-Runtime: Python
-
-Model Artifacts: Stored as .pkl files
-
-Environment Variables: Managed by Render automatically
-
-📌 Internship Information
-
-Internship Provider: CodeAlpha
-
-Project Title: Sales Prediction using Machine Learning
-
-Domain: Data Science / Machine Learning
-
-Intern: Sayan Mondal
-
-🔗 Links
-
-GitHub Repository: (Add your repo link here)
-
-Live Application: (Add Render URL here)
-
-LinkedIn Post: (Add LinkedIn post link here)
-
-📜 License
-
-This project is developed for educational and internship purposes only.
-
-🙌 Acknowledgements
-
-Special thanks to CodeAlpha for providing this internship opportunity and enabling hands-on learning in Machine Learning and full-stack deployment.
+This project is intended for educational and internship purposes only.
